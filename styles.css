@@ -1,0 +1,287 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin-top: 140px;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #E9ECDE;
+}
+
+p{
+  font-size: 20px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+/*HEADER*/
+
+header{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10%;
+  background-color: #283618;
+  color: #FEFAE0;
+}
+
+.header-img{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#header-img{
+  width: 40px;
+}
+
+.header-img h1{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+
+.nav-link{
+  padding: 10px;
+  text-decoration: none;
+  color: #FEFAE0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.nav-link:hover{
+  color: white;
+  transition-duration: 0.2s;
+}
+
+/*END HEADER*/
+
+/*MAIN*/
+.flex-container, .video-container{
+  margin-left: 10%;
+  margin-right: 20%;
+}
+
+h2{
+  font-size: 28px;
+}
+
+.icon{
+  color: #BC6C25;
+  font-size: 70px;
+  text-align: end;
+  padding-right: 30px;
+}
+
+.flex-item{
+  padding-top: 95px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 10px 0;
+  table-layout: fixed;
+  margin-top: 20px;
+}
+
+th {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px; 
+  background-color: #ECC393;
+  box-shadow: 5px 5px 5px #888;
+  border-radius: 10px 10px 0px 0;
+}
+
+td {
+  padding: 10px 25px;
+  background-color: white;
+  height: 150px;
+  box-shadow: 5px 5px 5px #888;
+  border-radius: 0 0 10px 10px;
+}
+
+td, th{
+  vertical-align: top; 
+  text-align: center;  
+}
+
+td p{
+  font-size: 15px;
+}
+
+td i{
+  display: block; 
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+tr > td + td, tr > th + th {
+  border-left-width: 30px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ECC393;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-style: italic;
+}
+
+blockquote:before {
+  color: #ECC393;
+  font-size: 4em;
+  font-style: normal;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.5em;
+  content: "\201C";
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: 600;
+  margin-top:0.5em;
+}
+
+.video-container{
+  padding: 95px 0;
+  margin: 0 3em;
+  width: 100%;
+  display: flex; 
+  justify-content: center; 
+  }
+
+#video {
+  width: 100%;
+  max-width: 600px; 
+  height: auto; 
+  aspect-ratio: 16 / 9;
+}
+
+#signUp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+#signUp h2{
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+#form {
+  width: 100%;
+  max-width: 300px;
+}
+
+#email {
+  width: 100%;
+  height: 2rem;
+  padding-left: 0.5em;
+  margin-bottom: 1.5rem;
+}
+
+#submit {
+  background-color: #283618;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 200px; 
+}
+
+#submit:hover {
+  background-color: #3e4c40;
+}
+/*END MAIN*/
+
+/*FOOTER*/
+  footer{
+    background-color: #c7c7c7;
+    margin-top: 85px;
+    padding: 15px 0;
+  }
+
+  footer p{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  .bold{
+    padding-top: 10px;
+    font-weight: 500;
+  }
+/*END FOOTER*/
+
+@media only screen and (max-width: 650px){
+  header{
+    display: block;
+    padding: 20px;
+  }
+
+  #nav-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.flex-container{
+  margin-top: 180px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+  .video-container{
+    padding: 30px 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+ @media only screen and (max-width: 950px){
+    .flex-container{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .video-container{
+    padding: 50px 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 500px;
+  }
+  }
