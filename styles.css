@@ -33,6 +33,10 @@ ul{
 }
 
 /*HEADER*/
+#nav-bar {
+    display: flex; /* Show the menu on larger screens */
+  }
+
 .menu-icon {
   display: none; 
 }
@@ -263,6 +267,9 @@ blockquote span{
 /*END FOOTER*/
 
  @media only screen and (max-width: 950px){
+  #nav-bar.show {
+    display: block; /* Show when the 'show' class is toggled */
+  }
    .nav-bar{
     overflow: hidden;
     position: relative;
