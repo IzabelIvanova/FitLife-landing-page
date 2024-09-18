@@ -110,13 +110,15 @@
       <p>1234 Main Street, Anytown, USA | (123) 456-7890</p>
       <p>info@company.com | www.company.com</p>
     </footer>
-       <script>
-      function myFunction() {
-        var x = document.getElementById("nav-bar");
-        if (x) {
-          x.classList.toggle("show"); // Toggle 'show' class to display/hide nav links
+    <script>
+        function myFunction() {
+          var x = document.getElementById("nav-bar");
+          if (x) {
+            x.classList.toggle("show"); // Toggles 'show' class to display/hide the nav bar
+          } else {
+            console.error("Element with id 'nav-bar' not found.");
+          }
         }
-      }
-    </script>
+     </script>
   </body>
 </html>
