@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   margin-top: 140px;
   font-family: "Outfit", sans-serif;
@@ -48,6 +52,7 @@ header{
   padding: 10px 10%;
   background-color: var(--dark-green);
   color: var(--light-green);
+  box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.3);
 }
 
 .header-img{
@@ -280,11 +285,16 @@ blockquote span{
     position: relative;
    }
 
-   #nav-bar {
-      display: none;
+    #nav-bar {
       text-align: center;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease-in-out; 
     }
 
+    #nav-bar.show {
+      max-height: 500px; 
+    }
     .nav-link {
       font-size: 17px;
       display: block;
@@ -306,9 +316,6 @@ blockquote span{
       padding: 10px;
     }
 
-    #nav-bar.show {
-      display: block;
-    }
 
     .flex-container{
       margin-left: 5%;
