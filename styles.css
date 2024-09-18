@@ -34,7 +34,7 @@ ul{
 
 /*HEADER*/
 .menu-icon {
-  display: none;
+  display: none; /* Скрита по подразбиране на по-големи екрани */
 }
 
 header{
@@ -263,7 +263,6 @@ blockquote span{
 /*END FOOTER*/
 
  @media only screen and (max-width: 950px){
-
    header{
      display: flex;
      flex-direction: column;
@@ -307,16 +306,17 @@ blockquote span{
       padding: 10px;
     }
 
-  #nav-bar.show {
+    #nav-bar.show {
       display: block;
     }
 
     .flex-container{
       margin-left: 5%;
-      margin-right: 5%;
+      margin-right: 9%;
+      text-align: justify;
     }
 
     .video-container{
-    padding: 3rem;
+    padding: 3rem 0;
   }
 }
